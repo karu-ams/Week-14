@@ -31,7 +31,7 @@ class InventoryPage {
     get addTestShirtBtn () { return $('//*[@id="add-to-cart-test.allthethings()-t-shirt-(red)"]') }
     get removeTestShirtBtn () { return $('//*[@id="remove-test.allthethings()-t-shirt-(red)"]') }
 
-    get cartItems() { return $('.shopping_cart_badge') };
+    get cartBtn() { return $('.shopping_cart_link') };
 
     // METHODS
     openInventory () {

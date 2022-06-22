@@ -1,5 +1,5 @@
 import LoginPage from '../pageobjects/login.page'
-import InventoryPage from "../pageobjects/inventory.page"
+import InventoryPage from '../pageobjects/inventory.page'
 import CartPage from '../pageobjects/cart.page'
 
 describe('Testing action buttons', () => {
@@ -13,10 +13,10 @@ describe('Testing action buttons', () => {
     it('Return to Inventory to continue shopping testing', async () => {
         await CartPage.continueShopBtn.click();
         await expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
-    });
+    })
     it('Go to checkout testing', async () => {
         await InventoryPage.cartBtn.click();
         await CartPage.checkoutBtn.click();
         await expect(browser).toHaveUrl('https://www.saucedemo.com/checkout-step-one.html');
-    });
+    })
 })
